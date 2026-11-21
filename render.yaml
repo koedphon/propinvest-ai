@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: propinvest-ai
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /api/announcement
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ADMIN_EMAILS
+        sync: false
+      - key: VITE_ADMIN_EMAILS
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false

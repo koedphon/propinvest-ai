@@ -1,0 +1,221 @@
+{
+  "settings": {
+    "promptpayId": "081-234-5678",
+    "promptpayName": "PropInvest Admin",
+    "bankName": "ธนาคารกสิกรไทย (KBANK)",
+    "bankAccountNumber": "045-8-12345-6",
+    "bankAccountHolder": "ชื่อบัญชีผู้รับเงิน (แก้ในหลังบ้าน)",
+    "enablePromptPay": true,
+    "enableStripe": true,
+    "standardPriceThb": 150,
+    "proPriceThb": 299,
+    "referralCommissionPercent": 20
+  },
+  "transactions": [
+    {
+      "id": "tx_demo_01",
+      "customerEmail": "user1@example.com",
+      "customerName": "สมหญิง อสังหาฯ พระราม 9",
+      "planTier": "PRO",
+      "amountThb": 299,
+      "paymentMethod": "STRIPE_CARD",
+      "status": "COMPLETED",
+      "referenceNo": "TXN-STRIPE-8921",
+      "createdAt": "18/10/2569"
+    },
+    {
+      "id": "tx_demo_02",
+      "customerEmail": "user2@example.com",
+      "customerName": "วิทยา ที่ดินชลบุรี-ระยอง",
+      "planTier": "STANDARD",
+      "amountThb": 150,
+      "paymentMethod": "PROMPTPAY_QR",
+      "status": "COMPLETED",
+      "referenceNo": "TXN-PP-4512",
+      "createdAt": "19/10/2569"
+    },
+    {
+      "id": "tx_demo_03",
+      "customerEmail": "user3@example.com",
+      "customerName": "ชุติมา Property Consultant",
+      "planTier": "PRO",
+      "amountThb": 299,
+      "paymentMethod": "PROMPTPAY_QR",
+      "status": "COMPLETED",
+      "referenceNo": "TXN-PP-9901",
+      "createdAt": "20/10/2569"
+    },
+    {
+      "id": "tx_demo_04",
+      "customerEmail": "user4@example.com",
+      "customerName": "ธีรวัฒน์ นายหน้ามือทอง",
+      "planTier": "PRO",
+      "amountThb": 299,
+      "paymentMethod": "PROMPTPAY_QR",
+      "status": "COMPLETED",
+      "referenceNo": "TXN-PP-1044",
+      "createdAt": "20/10/2569",
+      "notes": "ตรวจสอบสลิปโอน 299 บาท เรียบร้อยแล้ว"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_admin_01",
+      "email": "user5@example.com",
+      "name": "Super Admin & Owner",
+      "planTier": "VIP",
+      "quotaMonthly": 999999,
+      "scansUsed": 142,
+      "joinedAt": "01/09/2569",
+      "status": "ACTIVE",
+      "isVip": true,
+      "totalSpentThb": 0,
+      "notes": "ผู้ก่อตั้งระบบ / เจ้าของสิทธิ์ไม่จำกัดตลอดชีพ"
+    },
+    {
+      "id": "usr_admin_02",
+      "email": "user6@example.com",
+      "name": "(Founder)",
+      "planTier": "VIP",
+      "quotaMonthly": 999999,
+      "scansUsed": 88,
+      "joinedAt": "01/09/2569",
+      "status": "ACTIVE",
+      "isVip": true,
+      "totalSpentThb": 0,
+      "notes": "ผู้ก่อตั้งระบบ / บัญชีหลัก"
+    },
+    {
+      "id": "usr_cust_01",
+      "email": "user1@example.com",
+      "name": "สมหญิง อสังหาฯ พระราม 9",
+      "planTier": "PRO",
+      "quotaMonthly": 400,
+      "scansUsed": 189,
+      "joinedAt": "15/09/2569",
+      "status": "ACTIVE",
+      "isVip": false,
+      "totalSpentThb": 897
+    },
+    {
+      "id": "usr_cust_02",
+      "email": "user2@example.com",
+      "name": "วิทยา ที่ดินชลบุรี-ระยอง",
+      "planTier": "STANDARD",
+      "quotaMonthly": 100,
+      "scansUsed": 62,
+      "joinedAt": "28/09/2569",
+      "status": "ACTIVE",
+      "isVip": false,
+      "totalSpentThb": 300
+    },
+    {
+      "id": "usr_cust_03",
+      "email": "user3@example.com",
+      "name": "ชุติมา Property Consultant",
+      "planTier": "PRO",
+      "quotaMonthly": 500,
+      "scansUsed": 215,
+      "joinedAt": "02/10/2569",
+      "status": "ACTIVE",
+      "isVip": false,
+      "totalSpentThb": 598
+    },
+    {
+      "id": "usr_cust_04",
+      "email": "user4@example.com",
+      "name": "ธีรวัฒน์ นายหน้ามือทอง",
+      "planTier": "PRO",
+      "quotaMonthly": 400,
+      "scansUsed": 10,
+      "joinedAt": "10/10/2569",
+      "status": "ACTIVE",
+      "isVip": false,
+      "totalSpentThb": 299,
+      "notes": "โควตาฟรีหมดแล้ว อยู่ระหว่างรอตรวจสอบสลิป Pro"
+    }
+  ],
+  "leads": [
+    {
+      "id": "lead_01",
+      "contractorId": "c1",
+      "contractorName": "บริษัท ทีแอนด์พี โฮมบิวเดอร์ จำกัด",
+      "customerName": "คุณภานุเดช",
+      "customerPhone": "081-445-6677",
+      "customerLineId": "panudet.p",
+      "propertyLocation": "กรุงเทพมหานคร ประเวศ",
+      "propertyType": "บ้านเดี่ยว",
+      "areaSizeSqWa": 75,
+      "scopeOfWork": "รีโนเวททั้งหลัง (Full Renovation)",
+      "notes": "ต้องการปรับปรุงระบบท่อประปา ปูกระเบื้องใหม่ และทาสีทั้งหลัง",
+      "status": "IN_PROGRESS",
+      "createdAt": "18/10/2569"
+    },
+    {
+      "id": "lead_02",
+      "contractorId": "c2",
+      "contractorName": "สยามรีโนเวชั่น & ดีไซน์ สตูดิโอ",
+      "customerName": "คุณวรัญญา",
+      "customerPhone": "089-223-1199",
+      "customerLineId": "waranya.estate",
+      "propertyLocation": "นนทบุรี บางกรวย",
+      "propertyType": "ทาวน์โฮม",
+      "areaSizeSqWa": 28,
+      "scopeOfWork": "ต่อเติมครัวหลังบ้านและหลังคาโรงรถ",
+      "notes": "ลงเสาเข็มไมโครไพล์ I-18 ครัวหลังบ้าน",
+      "status": "CONTACTED",
+      "createdAt": "19/10/2569"
+    },
+    {
+      "id": "lead_03",
+      "contractorId": "c3",
+      "contractorName": "บริษัท บางกอก ซิวิล คอนสตรัคชั่น กรุ๊ป จำกัด",
+      "customerName": "คุณเกียรติศักดิ์",
+      "customerPhone": "092-334-5566",
+      "customerLineId": "kiat.prop",
+      "propertyLocation": "กรุงเทพมหานคร วัฒนา",
+      "propertyType": "คอนโดมิเนียม",
+      "areaSizeSqWa": 18,
+      "scopeOfWork": "งานตกแต่งภายใน Built-in",
+      "notes": "งานบิลท์อินห้องนอนและห้องรับแขก",
+      "status": "NEW",
+      "createdAt": "20/10/2569"
+    }
+  ],
+  "announcement": {
+    "enabled": true,
+    "message": "✨ อัปเดตใหม่: เชื่อมต่อ AI Vision OCR สกัดข้อมูลป้ายอสังหาฯ และคำนวณสินเชื่อเปรียบเทียบ 5 ธนาคารชั้นนำอัตโนมัติ!",
+    "level": "info",
+    "updatedAt": "20/10/2569"
+  },
+  "logs": [
+    {
+      "id": "log_1792512450823_i26",
+      "action": "TXN_STATUS",
+      "actor": "admin",
+      "details": "อัปเดตสถานะ TXN-PP-1044 เป็น COMPLETED",
+      "timestamp": "16:07:30 20/10/2569"
+    },
+    {
+      "id": "log_01",
+      "action": "ADMIN_LOGIN",
+      "actor": "user5@example.com",
+      "details": "เข้าสู่ระบบหลังร้าน Super Admin Dashboard เรียบร้อยแล้ว",
+      "timestamp": "16:07:21 20/10/2569"
+    },
+    {
+      "id": "log_02",
+      "action": "PAYMENT_RECEIVED",
+      "actor": "user4@example.com",
+      "details": "แจ้งชำระเงิน PromptPay QR ยอด 299 บาท (TXN-PP-1044)",
+      "timestamp": "15:07:21 20/10/2569"
+    },
+    {
+      "id": "log_03",
+      "action": "OCR_SCAN",
+      "actor": "user3@example.com",
+      "details": "สแกนป้ายประกาศขายที่ดิน ย่านบางนา ด้วย Gemini 2.5 Flash",
+      "timestamp": "14:07:21 20/10/2569"
+    }
+  ]
+}
